@@ -1,0 +1,303 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+/* Container */
+
+.container{
+    width:100%;
+    min-height:100vh;
+}
+
+/* Header */
+
+.header{
+    height:70px;
+    background:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 30px;
+    border-bottom:1px solid #ddd;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    color:#2563eb;
+}
+
+.profile{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background:#2563eb;
+}
+
+/* Layout */
+
+.layout{
+    display:flex;
+}
+
+/* Sidebar */
+
+.sidebar{
+    width:250px;
+    min-height:calc(100vh - 70px);
+    background:#fff;
+    border-right:1px solid #ddd;
+}
+
+.sidebar a{
+    display:block;
+    padding:15px 25px;
+    text-decoration:none;
+    color:#333;
+    font-size:15px;
+}
+
+.sidebar a:hover{
+    background:#eef4ff;
+}
+
+.sidebar .active{
+    background:#2563eb;
+    color:white;
+}
+
+/* Main Content */
+
+.main-content{
+    flex:1;
+    padding:30px;
+}
+
+/* Page Header */
+
+.page-header{
+    margin-bottom:25px;
+}
+
+.page-header h1{
+    font-size:32px;
+    color:#1f2937;
+    margin-bottom:5px;
+}
+
+.page-header p{
+    color:#6b7280;
+}
+
+/* Steps */
+
+.steps{
+    display:flex;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.step{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    border:2px solid #2563eb;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:bold;
+}
+
+.step.active{
+    background:#2563eb;
+    color:white;
+}
+
+.line{
+    width:80px;
+    height:2px;
+    background:#2563eb;
+}
+
+/* RFQ Summary */
+
+.vendor-box{
+    background:white;
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:20px;
+    margin-bottom:25px;
+}
+
+.vendor-box strong{
+    display:block;
+    margin-bottom:10px;
+    font-size:18px;
+}
+
+.vendor-box p{
+    color:#555;
+}
+
+/* Section Title */
+
+.section-title{
+    font-size:20px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+/* Table */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 2px 6px rgba(0,0,0,0.05);
+}
+
+thead{
+    background:#2563eb;
+    color:white;
+}
+
+th{
+    padding:15px;
+    text-align:left;
+}
+
+td{
+    padding:15px;
+    border-bottom:1px solid #eee;
+}
+
+tbody tr:hover{
+    background:#f9fafb;
+}
+
+/* Bottom Section */
+
+.bottom-section{
+    display:flex;
+    gap:40px;
+    margin-top:30px;
+}
+
+/* Left Side */
+
+.left-side{
+    flex:1;
+}
+
+.left-side label{
+    display:block;
+    margin-top:20px;
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+.left-side input,
+.left-side textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #d1d5db;
+    border-radius:8px;
+    outline:none;
+}
+
+.left-side textarea{
+    height:120px;
+    resize:none;
+}
+
+/* Buttons */
+
+.buttons{
+    display:flex;
+    gap:15px;
+    margin-top:20px;
+}
+
+.primary{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.primary:hover{
+    background:#1d4ed8;
+}
+
+.secondary{
+    background:#e5e7eb;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.secondary:hover{
+    background:#d1d5db;
+}
+
+/* Right Side */
+
+.right-side{
+    width:350px;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+/* Summary Box */
+
+.summary-box{
+    background:white;
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:20px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.05);
+}
+
+.summary-box div{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:12px;
+}
+
+.summary-box hr{
+    margin:12px 0;
+    border:none;
+    border-top:1px solid #ddd;
+}
+
+/* Upload Box */
+
+.upload-box{
+    height:140px;
+    border:2px dashed #2563eb;
+    border-radius:10px;
+    background:#f8fbff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#2563eb;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.upload-box:hover{
+    background:#eef4ff;
+}

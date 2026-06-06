@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VendorBridge - Quotations</title>
+  <link rel="stylesheet" href="quatation.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">VendorBridge</div>
+      <div class="profile"></div>
+    </div>
+
+    <div class="layout">
+      <aside class="sidebar">
+       <a href="dashboard.html">Dashboard</a>
+        <a href="vendors.html">Vendors</a>
+        <a href="create_rfg.html">RFQ's</a>
+        <a href="quatation.html" class="active">Quotations</a>
+        <a href="approval.html">Approvals</a>
+        <a href="#">Purchase orders</a>
+        <a href="invoics.html">Invoices</a>
+        <a href="report.html">Reports</a>
+        <a href="activity.html">Activity</a>
+      </aside>
+
+      <main class="main-content">
+        <div class="page-header">
+          <h1>Submit Quotations</h1>
+          <p>RFQ: office furniture procurement q2 - deadline 15 june 2025</p>
+        </div>
+
+        <div class="steps">
+          <div class="step active">1</div>
+          <div class="line"></div>
+          <div class="step">2</div>
+          <div class="line"></div>
+          <div class="step">3</div>
+        </div>
+
+        <div class="vendor-box">
+          <strong>RFQ Summary</strong>
+          <p>Ergonomic chair * 25, standing desk * 10 - category furniture</p>
+        </div>
+
+        <div class="section-title">Your Quotation</div>
+        <table>
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Qty</th>
+              <th>Unit Price</th>
+              <th>Total</th>
+              <th>Delivery (days)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ergonomic chair</td>
+              <td>25</td>
+              <td>3500</td>
+              <td>87,500</td>
+              <td>7</td>
+            </tr>
+            <tr>
+              <td>Tech Core LTD</td>
+              <td>10</td>
+              <td>8,200</td>
+              <td>82,000</td>
+              <td>14</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="bottom-section">
+          <div class="left-side">
+            <label for="gst">Tax / GST %</label>
+            <input type="text" id="gst" value="18%" />
+
+            <label for="note">Note / Terms</label>
+            <textarea id="note">Payment terms: 20 days net...</textarea>
+
+            <div class="buttons">
+              <button class="primary">Submit Quotation</button>
+              <button class="secondary">Save Draft</button>
+            </div>
+          </div>
+
+          <div class="right-side">
+            <div class="summary-box">
+              <div><span>Subtotal</span><span>1,69,599</span></div>
+              <div><span>GST (18%)</span><span>30,510</span></div>
+              <hr />
+              <div><strong>Grand total</strong><strong>2,00,010</strong></div>
+            </div>
+
+            <div class="upload-box">
+              Upload Files
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
