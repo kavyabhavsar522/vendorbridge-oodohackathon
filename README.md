@@ -57,6 +57,8 @@ The application ships with pre-seeded mock data for easy evaluation. Use the fol
 
 > 💡 **Tip:** Use the **Role Switcher** dropdown in the top navigation bar to instantly switch between roles and explore the full procurement lifecycle without logging out.## 📸 Application Screens
 > ---
+>
+> 
 
 ## 📸 Application Screens
 
