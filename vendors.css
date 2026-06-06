@@ -1,0 +1,179 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    display:flex;
+    min-height:100vh;
+    background:#f4f6f9;
+}
+
+/* Sidebar */
+
+.sidebar{
+    width:250px;
+    background:white;
+    border-right:1px solid #ddd;
+    padding:20px 0;
+}
+
+.sidebar-item{
+    display:block;
+    text-decoration:none;
+    color:#333;
+    padding:15px 25px;
+    font-size:16px;
+}
+
+.sidebar-item:hover{
+    background:#f1f5f9;
+}
+
+.sidebar-item.active{
+    background:#2563eb;
+    color:white;
+}
+
+/* Main Content */
+
+.main-content{
+    flex:1;
+    padding:30px;
+}
+
+/* Header */
+
+.header-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.title-area h1{
+    font-size:32px;
+    margin-bottom:5px;
+}
+
+.title-area p{
+    color:#666;
+}
+
+.btn-add-vendor{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:15px;
+}
+
+/* Search */
+
+.search-container{
+    position:relative;
+    margin-bottom:20px;
+}
+
+.search-bar{
+    width:100%;
+    padding:14px 50px 14px 15px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:15px;
+}
+
+.search-icon{
+    position:absolute;
+    right:18px;
+    top:50%;
+    transform:translateY(-50%);
+    color:#666;
+}
+
+/* Tabs */
+
+.filter-tabs{
+    display:flex;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.tab{
+    border:none;
+    padding:10px 16px;
+    background:#e5e7eb;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.tab:hover{
+    background-color: #b1cbe5;
+}
+
+.tab.active{
+    background:#2563eb;
+    color:white;
+}
+
+/* Table */
+
+.table-container{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th{
+    background:#f8fafc;
+    text-align:left;
+    padding:16px;
+    border-bottom:1px solid #ddd;
+}
+
+td{
+    padding:16px;
+    border-bottom:1px solid #eee;
+}
+
+tr:hover{
+    background:#fafafa;
+}
+
+/* Status */
+
+.active-status{
+    color:green;
+    font-weight:bold;
+}
+
+.blocked-status{
+    color:red;
+    font-weight:bold;
+}
+
+/* View Button */
+
+.btn-view{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:8px 14px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.btn-view:hover{
+    background:#1d4ed8;
+}
+

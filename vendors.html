@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vendors Dashboard</title>
+<link rel="stylesheet" href="vendors.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<aside class="sidebar">
+
+    <a href="dashboard.html">Dashboard</a>
+        <a href="vendors.html">Vendors</a>
+        <a href="create_rfg.html">RFQ's</a>
+        <a href="quatation.html" class="active">Quotations</a>
+        <a href="approval.html">Approvals</a>
+        <a href="#">Purchase orders</a>
+        <a href="invoics.html">Invoices</a>
+        <a href="report.html">Reports</a>
+        <a href="activity.html">Activity</a>
+
+</aside>
+
+<main class="main-content">
+
+    <div class="header-container">
+
+        <div class="title-area">
+            <h1>Vendors</h1>
+            <p>Manage supplier profiles and registrations</p>
+        </div>
+
+        <button class="btn-add-vendor">
+            + Add Vendor
+        </button>
+
+    </div>
+
+    <div class="search-container">
+
+        <input
+        type="text"
+        class="search-bar"
+        placeholder="Search by name, GST number, category...">
+
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+
+    </div>
+
+    <div class="filter-tabs">
+
+        <button class="tab active">All (28)</button>
+
+        <button class="tab">Active (21)</button>
+
+        <button class="tab">Pending (4)</button>
+
+        <button class="tab">Blocked (3)</button>
+
+    </div>
+
+    <div class="table-container">
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Vendor Name</th>
+                    <th>Category</th>
+                    <th>GST No.</th>
+                    <th>Contact No.</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>Infra Supplies Pvt Ltd</td>
+                    <td>Construction</td>
+                    <td>27AABCS1429BZO</td>
+                    <td>9876543210</td>
+                    <td class="active-status">Active</td>
+                    <td>
+                        <button class="btn-view">View</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Tech Core LTD</td>
+                    <td>IT</td>
+                    <td>27AAICT8754XZ</td>
+                    <td>9876541230</td>
+                    <td class="active-status">Active</td>
+                    <td>
+                        <button class="btn-view">View</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>FastLog Transport</td>
+                    <td>Logistics</td>
+                    <td>27AABCS8521YZ</td>
+                    <td>9988776655</td>
+                    <td class="blocked-status">Blocked</td>
+                    <td>
+                        <button class="btn-view">View</button>
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</main>
+
+</body>
+</html>

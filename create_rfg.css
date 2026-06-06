@@ -1,0 +1,235 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+.container{
+    width:100%;
+    min-height:100vh;
+}
+
+/* Header */
+
+.header{
+    height:70px;
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 30px;
+    border-bottom:1px solid #ddd;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    color:#2563eb;
+}
+
+.profile{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background:#2563eb;
+}
+
+/* Layout */
+
+.layout{
+    display:flex;
+}
+
+/* Sidebar */
+
+.sidebar{
+    width:250px;
+    background:white;
+    min-height:calc(100vh - 70px);
+    border-right:1px solid #ddd;
+}
+
+.sidebar a{
+    display:block;
+    padding:15px 25px;
+    text-decoration:none;
+    color:#333;
+}
+
+.sidebar a:hover{
+    background:#f3f4f6;
+}
+
+.sidebar .active{
+    background:#2563eb;
+    color:white;
+}
+
+.sidebar .active:hover{
+    background-color: #2563eb;
+    color: white;
+}
+
+/* Main Content */
+
+.main-content{
+    flex:1;
+    padding:30px;
+}
+
+/* Page Header */
+
+.page-header h1{
+    font-size:32px;
+}
+
+.page-header p{
+    color:#666;
+    margin-top:5px;
+}
+
+/* Steps */
+
+.steps{
+    display:flex;
+    align-items:center;
+    margin:25px 0;
+}
+
+.step{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    border:2px solid #2563eb;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.step.active{
+    background:#2563eb;
+    color:white;
+}
+
+.line{
+    width:80px;
+    height:2px;
+    background:#2563eb;
+}
+
+.steps {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 30px 0;
+}
+
+.step {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2.5px solid var(--border-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background: white;
+}
+
+.step.active {
+    background: #55a5d0; /* Light layout step highlight */
+}
+
+.line {
+    width: 260px;
+    height: 2.5px;
+    background: var(blue);
+}
+
+/* Form Grid */
+
+.form-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+label{
+    display:block;
+    margin-bottom:8px;
+    margin-top:15px;
+    font-weight:bold;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+textarea{
+    height:120px;
+}
+
+/* Table */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:10px;
+}
+
+th,
+td{
+    border:1px solid #ddd;
+    padding:10px;
+}
+
+button{
+    margin-top:10px;
+    padding:10px 15px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.vendor-box{
+    margin-top:10px;
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+/* Bottom */
+
+.bottom-section{
+    display:flex;
+    justify-content:space-between;
+    margin-top:40px;
+}
+
+.primary{
+    background:#2563eb;
+    color:white;
+}
+
+.secondary{
+    background:#e5e7eb;
+}
+
+.upload-box{
+    width:350px;
+    height:120px;
+    border:2px dashed #2563eb;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:10px;
+}
+

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create RFQ's - VendorBridge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="create_rfg.css">
+</head>
+<body>
+
+    <body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">VendorBridge</div>
+
+            <div class="profile"></div>
+        </header>
+
+        <div class="layout">
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+
+        <a href="dashboard.html">Dashboard</a>
+        <a href="vendors.html">Vendors</a>
+        <a href="create_rfg.html">RFQ's</a>
+        <a href="quatation.html" class="active">Quotations</a>
+        <a href="approval.html">Approvals</a>
+        <a href="#">Purchase orders</a>
+        <a href="invoics.html">Invoices</a>
+        <a href="report.html">Reports</a>
+        <a href="activity.html">Activity</a>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="main-content">
+
+                <div class="page-header">
+                    <h1>Create RFQ</h1>
+                    <p>New Request For Quotation</p>
+                </div>
+
+                <!-- Steps -->
+                <div class="steps">
+
+                    <div class="step active">1</div>
+                    <div class="line"></div>
+
+                    <div class="step">2</div>
+                    <div class="line"></div>
+
+                    <div class="step">3</div>
+
+                </div>
+
+                <!-- Form -->
+                <div class="form-grid">
+
+                    <div class="left">
+
+                        <label>RFQ Title</label>
+                        <input type="text">
+
+                        <label>Category</label>
+                        <input type="text">
+
+                        <label>Deadline</label>
+                        <input type="date">
+
+                        <label>Description</label>
+                        <textarea></textarea>
+
+                    </div>
+
+                    <div class="right">
+
+                        <label>Line Items</label>
+
+                        <table>
+                            <tr>
+                                <th>Item</th>
+                                <th>Qty</th>
+                                <th>Unit</th>
+                            </tr>
+
+                            <tr>
+                                <td>Chair</td>
+                                <td>25</td>
+                                <td>NOS</td>
+                            </tr>
+                        </table>
+
+                        <button>Add Item</button>
+
+                        <label>Assign Vendors</label>
+
+                        <div class="vendor-box">
+                            Infra Supplies Pvt Ltd
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Bottom Section -->
+
+                <div class="bottom-section">
+
+                    <div class="buttons">
+
+                        <button class="primary">
+                            Save & Send
+                        </button>
+
+                        <button class="secondary">
+                            Save Draft
+                        </button>
+
+                    </div>
+
+                    <div class="upload-box">
+                        Drag & Drop Files Here
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
