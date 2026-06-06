@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Procurement Dashboard</title>
+
+<link rel="stylesheet" href="dashboard.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- TOPBAR -->
+    <header class="topbar">
+        <div class="brand">VendorBridge</div>
+    </header>
+
+    <div class="layout">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <a href="dashboard.html" class="sidebar-item active">Dashboard</a>
+            <a href=" "sidebar-item">RFQs</a>
+            <a class="sidebar-item">Vendors</a>
+            <a class="sidebar-item">Reports</a>
+            <a class="sidebar-item">Logs</a>
+        </aside>
+
+        <!-- MAIN -->
+        <main class="main-content">
+
+            <!-- WELCOME -->
+            <div class="welcome-bar">
+                <div>
+                    <h1>Welcome back, Hiral</h1>
+                    <p class="subtitle">Logged in as <b>Procurement Officer</b></p>
+                </div>
+
+                <div class="quick-actions">
+                    <button class="btn primary">+ Create RFQ</button>
+                    <button class="btn">Compare Quotations</button>
+                    <button class="btn">Manage Vendors</button>
+                </div>
+            </div>
+
+            <!-- STATS CARDS -->
+            <div class="stats-grid">
+
+                <div class="card stat">
+                    <div class="icon blue">📄</div>
+                    <div>
+                        <p>Active RFQs</p>
+                        <h2>12</h2>
+                    </div>
+                </div>
+
+                <div class="card stat">
+                    <div class="icon green">👥</div>
+                    <div>
+                        <p>Verified Vendors</p>
+                        <h2>8</h2>
+                    </div>
+                </div>
+
+                <div class="card stat">
+                    <div class="icon orange">✔</div>
+                    <div>
+                        <p>Pending Approvals</p>
+                        <h2>4</h2>
+                    </div>
+                </div>
+
+                <div class="card stat">
+                    <div class="icon purple">💰</div>
+                    <div>
+                        <p>Total Spent</p>
+                        <h2>₹2,50,000</h2>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- MAIN GRID -->
+            <div class="main-grid">
+
+                <!-- TABLE -->
+                <div class="card">
+                    <div class="section-header">
+                        <h3>Recent RFQs</h3>
+                        <button class="link-btn">View All →</button>
+                    </div>
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>RFQ ID</th>
+                                <th>Title</th>
+                                <th>Category</th>
+                                <th>Deadline</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td class="primary">RFQ-101</td>
+                                <td>Office Supplies</td>
+                                <td>Procurement</td>
+                                <td>10 Jun</td>
+                                <td><span class="badge sent">Sent</span></td>
+                            </tr>
+
+                            <tr>
+                                <td class="primary">RFQ-102</td>
+                                <td>Laptop Purchase</td>
+                                <td>IT</td>
+                                <td>12 Jun</td>
+                                <td><span class="badge quotes">Quotes</span></td>
+                            </tr>
+
+                            <tr>
+                                <td class="primary">RFQ-103</td>
+                                <td>Software License</td>
+                                <td>IT</td>
+                                <td>15 Jun</td>
+                                <td><span class="badge approved">Approved</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- ACTIVITY -->
+                <div class="card activity">
+
+                    <div class="section-header">
+                        <h3>Activity Timeline</h3>
+                        <button class="link-btn">Full Log →</button>
+                    </div>
+
+                    <div class="timeline">
+
+                        <div class="log">
+                            <span>📝</span>
+                            <div>
+                                <p>RFQ Created</p>
+                                <small>Admin • 10:30 AM</small>
+                            </div>
+                        </div>
+
+                        <div class="log">
+                            <span>⚡</span>
+                            <div>
+                                <p>Quotation Submitted</p>
+                                <small>Vendor • 11:00 AM</small>
+                            </div>
+                        </div>
+
+                        <div class="log">
+                            <span>✔</span>
+                            <div>
+                                <p>Approved RFQ</p>
+                                <small>Manager • 12:00 PM</small>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+</div>
+
+</body>
+</html>
