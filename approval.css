@@ -1,0 +1,264 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* ================= TITLEBAR ================= */
+
+.titlebar{
+    height:60px;
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 20px;
+    border-bottom:1px solid #ddd;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.brand{
+    font-size:20px;
+    font-weight:bold;
+    color:#2563eb;
+}
+
+.user-section{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.search-box{
+    padding:8px 12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    width:200px;
+    outline:none;
+}
+
+.search-box:focus{
+    border-color:#2563eb;
+}
+
+.profile-circle{
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    background:#2563eb;
+}
+
+/* ================= APP LAYOUT ================= */
+
+.app-container{
+    display:flex;
+    min-height:calc(100vh - 60px);
+    background:#f4f6f9;
+}
+
+/* ================= SIDEBAR ================= */
+
+.sidebar{
+    width:250px;
+    background:white;
+    border-right:1px solid #ddd;
+    padding:20px 0;
+}
+
+.sidebar-item{
+    display:block;
+    text-decoration:none;
+    color:#333;
+    padding:15px 25px;
+    font-size:16px;
+    transition:0.2s;
+}
+
+.sidebar-item:hover{
+    background:#f1f5f9;
+}
+
+.sidebar-item.active{
+    background:#2563eb;
+    color:white;
+}
+
+/* ================= MAIN CONTENT ================= */
+
+.main-content{
+    flex:1;
+    padding:30px;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+/* ================= HEADER ================= */
+
+.header-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+    background:white;
+    border-radius:10px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.05);
+}
+
+.title-area h1{
+    font-size:28px;
+    margin-bottom:5px;
+}
+
+.title-area p{
+    color:#666;
+    font-size:14px;
+}
+
+.btn-action{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:12px 18px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+/* ================= WORKFLOW ================= */
+
+.workflow{
+    display:flex;
+    gap:10px;
+}
+
+.step{
+    flex:1;
+    background:white;
+    padding:15px;
+    border-radius:10px;
+    text-align:center;
+    border:1px solid #ddd;
+}
+
+.step.active{
+    border:2px solid #2563eb;
+    background:#eaf1ff;
+    font-weight:bold;
+}
+
+/* ================= GRID ================= */
+
+.grid{
+    display:grid;
+    grid-template-columns:1.4fr 1fr;
+    gap:20px;
+}
+
+/* ================= CARD ================= */
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* ================= ITEMS ================= */
+
+.approval-item{
+    display:flex;
+    justify-content:space-between;
+    padding:12px 0;
+    border-bottom:1px solid #eee;
+}
+
+.status{
+    font-size:12px;
+    padding:4px 8px;
+    border-radius:6px;
+    font-weight:bold;
+}
+
+.approved{
+    background:#dcfce7;
+    color:green;
+}
+
+.pending{
+    background:#e0f2fe;
+    color:#2563eb;
+}
+
+/* ================= TEXTAREA ================= */
+
+textarea{
+    width:100%;
+    height:90px;
+    margin-top:15px;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+/* ================= SUMMARY ================= */
+
+.summary-row{
+    display:flex;
+    justify-content:space-between;
+    padding:10px 0;
+    border-bottom:1px solid #eee;
+}
+
+/* ================= BUTTONS ================= */
+
+.actions{
+    display:flex;
+    gap:10px;
+    margin-top:15px;
+}
+
+.btn-approve{
+    flex:1;
+    padding:12px;
+    background:#22c55e;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.btn-reject{
+    flex:1;
+    padding:12px;
+    background:#ef4444;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+    .app-container{
+        flex-direction:column;
+    }
+
+    .sidebar{
+        width:100%;
+        display:flex;
+        overflow:auto;
+    }
+
+    .sidebar-item{
+        flex:1;
+        text-align:center;
+    }
+
+    .grid{
+        grid-template-columns:1fr;
+    }
+}

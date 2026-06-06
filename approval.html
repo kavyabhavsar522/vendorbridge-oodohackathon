@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VendorBridge - Approval Page</title>
+
+<link rel="stylesheet" href="approval.css">
+</head>
+
+<body>
+
+<!-- ================= TITLEBAR ================= -->
+<nav class="titlebar">
+
+    <div class="brand">
+        VendorBridge
+   
+
+</nav>
+
+<!-- ================= APP CONTAINER ================= -->
+<div class="app-container">
+
+    <!-- ================= SIDEBAR ================= -->
+    <aside class="sidebar">
+
+        <a href="#" class="sidebar-item">Dashboard</a>
+        <a href="vendors.html" class="sidebar-item">Vendors</a>
+        <a href="create_rfg.html" class="sidebar-item">RFQ's</a>
+        <a href="approval.html" class="sidebar-item active">Approvals</a>
+        <a href="#" class="sidebar-item">Purchase Orders</a>
+        <a href="#" class="sidebar-item">Invoices</a>
+        <a href="#" class="sidebar-item">Reports</a>
+        <a href="#" class="sidebar-item">Activity</a>
+
+    </aside>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main class="main-content">
+
+        <!-- HEADER -->
+        <div class="header-container">
+
+            <div class="title-area">
+                <h1>Approval Workflow</h1>
+                <p>RFQ: Office Furniture - Infra Supplies - ₹1,85,400</p>
+            </div>
+
+            <button class="btn-action">Add Note</button>
+
+        </div>
+
+        <!-- WORKFLOW -->
+        <div class="workflow">
+
+            <div class="step">Submitted</div>
+            <div class="step">L1 Review</div>
+            <div class="step active">L2 Approval</div>
+            <div class="step">Generate PO</div>
+
+        </div>
+
+        <!-- GRID -->
+        <div class="grid">
+
+            <!-- LEFT -->
+            <div class="card">
+
+                <h3>Approval Chain</h3>
+
+                <div class="approval-item">
+                    <span>Rahul Mehta</span>
+                    <span class="status approved">Approved</span>
+                </div>
+
+                <div class="approval-item">
+                    <span>Priya Shah</span>
+                    <span class="status pending">Pending</span>
+                </div>
+
+                <textarea placeholder="Add remarks or conditions..."></textarea>
+
+            </div>
+
+            <!-- RIGHT -->
+            <div class="card">
+
+                <h3>Quotation Summary</h3>
+
+                <div class="summary-row">
+                    <span>Vendor</span>
+                    <b>Infra Supplies</b>
+                </div>
+
+                <div class="summary-row">
+                    <span>Total</span>
+                    <b>₹1,85,400</b>
+                </div>
+
+                <div class="summary-row">
+                    <span>Delivery</span>
+                    <b>10 Days</b>
+                </div>
+
+                <div class="summary-row">
+                    <span>Rating</span>
+                    <b>4.5/5</b>
+                </div>
+
+                <div class="actions">
+                    <button class="btn-approve">Approve</button>
+                    <button class="btn-reject">Reject</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>
