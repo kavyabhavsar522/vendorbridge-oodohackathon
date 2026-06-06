@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    width: 350px;  
+    height: 400px;         
+    margin: 130px auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Profile Icon */
+.profile {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.profile i {
+    font-size: 70px;           /* change size here */
+    color: grey;
+}
+
+/* Inputs and Button */
+input,
+button {
+    width: 300px;
+    padding: 10px 3px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+button {
+    background: #1d3753f6;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #4f6378;
+}
+
+/* Link */
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+p {
+    margin-top: 15px;
+}
