@@ -1,5 +1,7 @@
 <div align="center">
+  
 # 🏢 VendorBridge
+
 [✨ Features](#-features)  • [🎭 Demo Credentials](#-demo-credentials) • [📸 Screens](#-application-screens) •
 
 </div>
